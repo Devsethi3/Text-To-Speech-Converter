@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #070925;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.hero h1 span {
+    color: #21ff73;
+}
+textarea {
+    width: 70%;
+    height: 50vh;
+    background: #2b285b;
+    box-shadow: 1rem 2rem 4rem 0 rgba(19, 23, 79, 0.3);
+    color: #fff;
+    font-size: 1.1rem;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 30px;
+}
+textarea::-webkit-scrollbar{
+    display: none;
+}
+textarea::placeholder {
+    color: #dddddda3;
+}
+.row {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button {
+    background: #10c050;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+button i {
+   font-size: 1.5rem;
+}
+.play-btn{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+select {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #fff;
+    background: #2b285b;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    appearance: none;
+    background-image: url(dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 20px;
+    cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+    .hero h1{
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    textarea{
+        margin-top: -1rem;
+        width: 90%;
+        height: 50vh;
+        font-size: .9rem;
+        text-align: justify;
+        padding: 10px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    select{
+        width: 100%;
+        background-image: none;
+    }
+    button{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
